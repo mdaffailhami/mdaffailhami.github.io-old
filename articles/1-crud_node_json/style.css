@@ -1,0 +1,73 @@
+* {
+  color: #fff;
+}
+
+body {
+  background-color: #1d2022;
+}
+
+#navbar {
+  z-index: 99999999999;
+}
+
+#navbar img {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.desktop #content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.desktop #content #left-side {
+  width: 800px;
+  background-color: rgb(39, 43, 51);
+  padding: 30px;
+  padding-top: 15px;
+  border-radius: 10px;
+}
+
+.desktop #content #right-side {
+  border-radius: 3%;
+  width: 320px;
+  height: fit-content;
+  background-color: rgb(35, 46, 53);
+  border: 1px solid #fff;
+  padding: 30px;
+}
+
+.mobile #content {
+  margin: auto;
+  background-color: rgb(33, 37, 43);
+  padding: 30px;
+  padding-top: 15px;
+  border-radius: 1.5%;
+}
+
+.desktop #articles h2::before {
+  /* Setting hyperlink di Navbar ke judul content */
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#content #left-side #pembuka img {
+  width: 100%;
+}
+
+#content #left-side #penutup {
+  overflow: hidden;
+}
+
+.desktop #content hr#pembatas {
+  /*
+    Sembunyikan <hr> sebagai pembatas
+    antara #left-side dengan #right-side
+    jika webnya versi desktop
+  */
+  display: none;
+}

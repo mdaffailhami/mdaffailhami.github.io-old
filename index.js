@@ -6,8 +6,8 @@
  * @desc [Mulai menggunakan backend pada tanggal 28/03/2021]
  */
 
-
 require("dotenv").config();
+console.log(process.env.NODEMAILER_EMAIL);
 const express = require("express");
 const formidable = require("formidable");
 const nodemailer = require("nodemailer");

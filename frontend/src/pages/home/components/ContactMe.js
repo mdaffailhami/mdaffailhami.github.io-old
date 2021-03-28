@@ -21,6 +21,7 @@ class ContactMe extends Component {
       fetch(`${variables.env.BACKEND_URL}/api/contact-me`, { method: "POST", body: data })
         .then((response) => response.json())
         .then((data) => {
+          console.log(data);
           if (data.status == true) {
             render(
               <SendFormAlert
@@ -30,7 +31,6 @@ class ContactMe extends Component {
               />,
               formAlert
             );
-            console.log(data);
           } else {
             render(
               <SendFormAlert

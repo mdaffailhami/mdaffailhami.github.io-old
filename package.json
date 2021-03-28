@@ -1,0 +1,30 @@
+{
+  "name": "mdaffailhami-personal-web",
+  "version": "2.0.0",
+  "description": "Muhammad Daffa Ilhami's personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdaffailhami/mdaffailhami.github.io.git"
+  },
+  "keywords": [
+    "personal-web",
+    "mdaffailhami-personal-web"
+  ],
+  "author": "mdaffailhami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdaffailhami/mdaffailhami.github.io/issues"
+  },
+  "homepage": "https://github.com/mdaffailhami/mdaffailhami.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+
+    "dotenv": "^8.2.0",
+    "formidable": "^1.2.2",
+    "nodemailer": "^6.5.0"
+  }
+}

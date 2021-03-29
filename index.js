@@ -7,7 +7,7 @@
  */
 
 require("dotenv").config();
-console.log(process.env.NODEMAILER_EMAIL);
+// console.log(process.env.NODEMAILER_EMAIL);
 const express = require("express");
 const formidable = require("formidable");
 const nodemailer = require("nodemailer");
@@ -34,19 +34,19 @@ app.post("/api/contact-me", (req, res) => {
 
     transporter.sendMail(
       {
-        from: "mdi.drive.mdi@gmail.com",
-        to: "mdaffailhami@gmail.com", // list of receivers
-        subject: "New message in mdaffailhami's personal web", // Subject line
+        from: process.env.NODEMAILER_EMAIL,
+        to: "mdaffailhami@gmail.com",
+        subject: "New message in mdaffailhami's personal web",
         text: `Message from:\nName: ${fields.name}\nEmail: ${fields.email}\n\nMessage:\n${fields.message}`, // plain text body
       },
       (err, info) => {
         if (err) {
           console.error(err);
-          res.json({ status: false, message: "failed to send message" });
+          res.json({ status: false, message: "failed to send message\n" + err });
           return;
         }
         console.log(info);
-        res.json({ status: true, message: "Message sent!" });
+        res.json({ status: true, message: "Message sent! to " + info.envelope.to });
       }
     );
   });

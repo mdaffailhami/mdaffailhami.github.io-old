@@ -4,7 +4,9 @@
   "description": "Muhammad Daffa Ilhami's personal website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "frontend":"cd frontend && npm start && cd ..",
+    "deploy": "cd frontend && npm run deploy && cd .. && git add . && git commit -m 'DEPLOY' && git push origin master"
   },
   "repository": {
     "type": "git",

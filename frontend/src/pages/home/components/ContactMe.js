@@ -8,7 +8,7 @@ class ContactMe extends Component {
     super(props);
   }
   componentDidMount() {
-    const form = document.querySelector("#contact-me-form");
+    const form = document.querySelector("#contact-me");
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -61,7 +61,7 @@ class ContactMe extends Component {
 
     return (
       <form
-        id="contact-me-form"
+        id="contact-me"
         style={{ width: isMobile ? "80%" : 600, margin: "50px auto 75px", position: "relative" }}
       >
         <h3 className="text-center">CONTACT ME</h3>
@@ -84,7 +84,7 @@ class ContactMe extends Component {
             name="message"
             className="form-control"
             id="message"
-            rows="3"
+            rows="4"
             placeholder="Type your message here..."
             style={{ resize: "none" }}
           ></textarea>
@@ -107,7 +107,7 @@ function FormIcon(props) {
     <div
       style={{
         padding: 10,
-        paddingTop: 5,
+        paddingTop: 7,
         backgroundColor: "#fff",
         borderTopLeftRadius: 4,
         borderBottomLeftRadius: 4,

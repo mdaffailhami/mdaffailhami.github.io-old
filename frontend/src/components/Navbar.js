@@ -57,18 +57,7 @@ class NavItems extends Component {
     });
   }
 
-  NavItem = (props) => {
-    return (
-      <li className="nav-item" style={{ marginRight: 10 }}>
-        <a className="nav-link active" aria-current="page" href={props.href}>
-          {props.text}
-        </a>
-      </li>
-    );
-  };
-
   render() {
-    const { NavItem } = this;
     return (
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-8 mb-lg-0">
@@ -77,10 +66,21 @@ class NavItems extends Component {
           <NavItem text="QnA" href="#qna" />
           <NavItem text="Skills" href="#skills" />
           <NavItem text="Socmeds" href="#socmeds" />
+          <NavItem text="Contact Me" href="#contact-me" />
         </ul>
       </div>
     );
   }
+}
+
+function NavItem(props) {
+  return (
+    <li className="nav-item" style={{ marginRight: 10 }}>
+      <a className="nav-link active" aria-current="page" href={props.href}>
+        {props.text}
+      </a>
+    </li>
+  );
 }
 
 export default Navbar;

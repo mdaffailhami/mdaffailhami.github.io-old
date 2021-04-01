@@ -1,12 +1,11 @@
 {
   "name": "mdaffailhami-personal-web",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Muhammad Daffa Ilhami's personal website",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "node index.js",
-    "frontend":"cd frontend && npm start && cd ..",
-    "deploy": "cd frontend && npm run deploy && cd .. && git add . && git commit -m 'DEPLOY' && git push origin master"
+    "start": "node src/index.js",
+    "frontend": "cd frontend && npm start && cd .."
   },
   "repository": {
     "type": "git",
@@ -23,10 +22,11 @@
   },
   "homepage": "https://github.com/mdaffailhami/mdaffailhami.github.io#readme",
   "dependencies": {
-    "express": "^4.17.1",
-
     "dotenv": "^8.2.0",
+    "express": "^4.17.1",
     "formidable": "^1.2.2",
+    "moment-timezone": "^0.5.33",
+    "mongoose": "^5.12.3",
     "nodemailer": "^6.5.0"
   }
 }

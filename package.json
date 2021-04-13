@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "frontend": "cd frontend && npm start && cd .."
+    "frontend": "cd src/frontend && npm start && cd ../.."
   },
   "repository": {
     "type": "git",

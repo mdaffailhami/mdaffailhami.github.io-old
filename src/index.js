@@ -20,9 +20,9 @@ app.use(routes.api.contactMe);
 app.use(routes.api.visitHistory);
 
 // Frontend static file
-app.use(express.static(resolve(__dirname, "../frontend/dist")));
+app.use(express.static(resolve(__dirname, "frontend/dist")));
 app.get("*", (req, res) => {
-  res.sendFile(resolve(__dirname, "../frontend/dist/index.html"));
+  res.sendFile(resolve(__dirname, "frontend/dist/index.html"));
 });
 
 app.listen(port, () => console.log("Server is running on port", port));

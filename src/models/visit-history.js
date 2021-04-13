@@ -16,6 +16,7 @@ mongoose.connect(
 const visitHistory = mongoose.model(
   "visit-history",
   new mongoose.Schema({
+    ipv4: String,
     time: String,
   }),
   "visit-history"

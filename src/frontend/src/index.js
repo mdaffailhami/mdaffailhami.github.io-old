@@ -12,7 +12,7 @@ function App() {
   document.getElementById("app-icon").setAttribute("href", icon.appIcon);
 
   // Ngepost Visit History ke database
-  fetch("http://api.ipify.org/")
+  fetch("https://api.ipify.org/")
     .then((res) => res.text())
     .then((ipv4) => {
       fetch(variables.env.BACKEND_URL + "/api/visit-history", {

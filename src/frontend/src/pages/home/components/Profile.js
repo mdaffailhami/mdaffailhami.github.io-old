@@ -18,6 +18,7 @@ function Profile(props) {
         alt="profile"
         style={{
           width: props.isMobile ? "34%" : 150,
+          height: props.isMobile ? "34%" : 150,
           borderRadius: "50%",
           marginTop: 20,
           marginBottom: 10,

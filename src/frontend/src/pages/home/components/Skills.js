@@ -6,6 +6,7 @@ function Skills(props) {
       <div style={{ height: 90, marginTop: -100 }}></div>
       {props.isMobile && <hr />}
       <h3 className="text-center">Skills</h3>
+      <Skill title="Roblox Studio" value="55" color="bg-info" />
       <Skill title="JavaScript" value="85" color="bg-warning" />
       <Skill title="HTML" value="80" color="bg-danger" />
       <Skill title="CSS" value="72" color="bg-primary" />

@@ -5,5 +5,15 @@ import mdinote from "./mdi-note.png";
 import aidunnow from "./aidunnow.png";
 import personFill from "./person-fill.svg";
 import envelopeFIll from "./envelope-fill.svg";
+import glovikulator from "./glovikulator.png";
 
-export default { github, instagram, appIcon, mdinote, aidunnow, personFill, envelopeFIll };
+export default {
+  github,
+  instagram,
+  appIcon,
+  mdinote,
+  aidunnow,
+  personFill,
+  envelopeFIll,
+  glovikulator,
+};

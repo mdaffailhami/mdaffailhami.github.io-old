@@ -16,12 +16,19 @@ function Projects(props) {
             title="MDI Note"
             desc="Aplikasi Web untuk menyimpan catatan"
           />
-          <Project.Column
+          {/* <Project.Column
             isMobile={props.isMobile}
             href="http://www.mediafire.com/file/7w4zgssskx8ik6t/Aidunnow.apk/file"
             image={icons.aidunnow}
             title="Aidunnow"
             desc="Aplikasi android calculator"
+          /> */}
+          <Project.Column
+            isMobile={props.isMobile}
+            href="https://glovikulator.netlify.app"
+            image={icons.glovikulator}
+            title="Glovikulator"
+            desc="PWA Calculator"
           />
         </Project.Row>
         <Project.Row>

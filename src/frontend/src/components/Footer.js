@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer mt-5 py-3 bg-dark">
       <div className="container">
         <center>
-          <span className="text-muted">| Last update on October 19, 2021 |</span>
+          <span className="text-muted">| Last update on November 8, 2021 |</span>
         </center>
         <center>
           <span className="text-muted">| Released on February 8, 2021 |</span>

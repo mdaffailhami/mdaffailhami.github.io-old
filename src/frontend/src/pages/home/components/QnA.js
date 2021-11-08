@@ -12,7 +12,7 @@ function QnA() {
         <Question text="Umur berapa?" />
         <Answer text="18 tahun" />
         <Question text="Anime yang disukai apa aja?" />
-        <Answer text="One Piece, Dr. STONE, & Mushoku Tensei" />
+        <Answer text="One Piece, Mushoku Tensei, & Dr. STONE" />
         <Question text="Teknologi apa yang dipake untuk ngebangun website ini?" />
         <Answer text="React.js & Bootstrap 5" />
         <Question text="Sejak kapan mulai belajar Programming?" />
